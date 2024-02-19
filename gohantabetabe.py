@@ -20,4 +20,7 @@ if decide == "y":
     if dinner == "和食":
         print(wachoice, "にしよう！")
 else:
-    print("じゃあ", dinner, "は？")
+    print("そんなこと言うなら自分で決めや〜")
+
+#0220
+#ループできるようにする
