@@ -23,3 +23,6 @@ while True:
         if dinner == "和食":
             print(wachoice, "にしよう！")
             break
+
+#0221の目標
+#ループ内にループ入れる
