@@ -7,8 +7,6 @@ chu = ["麻婆豆腐", "油淋鶏", "餃子"]
 
 while True:
     dinner = rdm.choice(genre)
-    
-    
 
     decide = input("今日のご飯は"+dinner+"でどう？>>y/n")
     if decide == "y":
@@ -27,7 +25,9 @@ while True:
                 break
         if dinner == "和食":
             wachoice = rdm.choice(wa)
-            final = input(wachoice + "はyどう？？>>y/n")
+            final = input(wachoice + "はどう？？>>y/n")
             if final == "y":
                 print(wachoice, "で決まり！")
                 break
+
+#2027２度目のInputでelseだったときにFinalに戻るようにする
