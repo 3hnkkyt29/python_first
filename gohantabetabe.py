@@ -7,22 +7,27 @@ chu = ["麻婆豆腐", "油淋鶏", "餃子"]
 
 while True:
     dinner = rdm.choice(genre)
-    wachoice = rdm.choice(wa)
-    yochoice = rdm.choice(yo)
-    chuchoice = rdm.choice(chu)
+    
+    
 
     decide = input("今日のご飯は"+dinner+"でどう？>>y/n")
     if decide == "y":
         print("いっぱい", dinner, "食べるぞ！")
         if dinner == "中華":
-            print(chuchoice, "にしよう！")
-            break
+            chuchoice = rdm.choice(chu)
+            final = input(chuchoice + "はどう？？>>y/n")
+            if final == "y":
+                print(chuchoice, "で決まり！")
+                break
         if dinner == "洋食":
-            print(yochoice, "にしよう！")
-            break
+            yochoice = rdm.choice(yo)
+            final = input(yochoice + "はどう？？>>y/n")
+            if final == "y":
+                print(yochoice, "で決まり！")
+                break
         if dinner == "和食":
-            print(wachoice, "にしよう！")
-            break
-
-#0221の目標
-#ループ内にループ入れる
+            wachoice = rdm.choice(wa)
+            final = input(wachoice + "はyどう？？>>y/n")
+            if final == "y":
+                print(wachoice, "で決まり！")
+                break
