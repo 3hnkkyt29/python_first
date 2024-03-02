@@ -25,3 +25,12 @@ print("""
       second
       third
       """)
+
+print('"Isn\'t," they said.') #エスケープ
+
+print('C:\some\name')
+print(r'C:\some\name') #rを入れることで¥nが特殊文字として認識されなくなる
+
+a = "python"
+b = "a" + a[1:]
+print(b)
