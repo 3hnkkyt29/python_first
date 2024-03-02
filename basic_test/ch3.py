@@ -18,3 +18,10 @@ print(n4)
 n5 = 0.1
 n6 = 0.2
 print(n5 + n6) #10進数のあれこれでなんか上手く0.3にはならない
+
+#part2.1
+print("""
+      first
+      second
+      third
+      """)
