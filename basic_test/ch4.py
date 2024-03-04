@@ -32,3 +32,8 @@ for i in range(2,10):
         break
     print(i, "は奇数")
 #continueだとループの最初に戻るけどbreakだともう完全にループから抜ける
+    
+#part4
+    pairs = [(1, "one"), (2, "two"), (3, "three"), (4, "four")]
+    pairs.sort(key=lambda pair: pair[1])
+    pairs
