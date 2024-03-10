@@ -19,5 +19,18 @@ print(seki)
 taisyo = set1 ^ set2
 print(taisyo)
 
+for count in range(3):
+    print(count)
 
+for i in range(4):
+    if i == 2:
+        continue
+    print(i)
+
+num = [1, 2, 3, 4]
+num.pop(2)
+print(num)
+
+area = [x ** 2 for x in range(3)]
+print(area)
 
