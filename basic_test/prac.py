@@ -42,10 +42,53 @@
 
 # print('e')
 
-for i in range(3):
-    if i == 0:
-        continue
-    print(i)
-    for v in ['a', 'b', 'c']:
-        print(v)
-        break
+# for i in range(3):
+#     if i == 0:
+#         continue
+#     print(i)
+#     for v in ['a', 'b', 'c']:
+#         print(v)
+#         break
+
+# number = 7
+# def job(arg=number):
+#     print(arg)
+# number = 10
+# job()
+# job(20)
+
+# test = 'one',
+# print(test)
+
+# list = ['b', 'a', 'c']
+# sorted(list)
+# print(list)
+
+arg = 'out'
+
+def func1():
+
+    def func2():
+        arg = 'local'
+
+    def func3():
+        nonlocal arg
+        arg = 'nonlocal'
+
+    def func4():
+        global arg
+        arg = 'global'
+
+    arg = 'in'
+
+    func2()
+    print(arg)
+
+    func3()
+    print(arg)
+
+    func4()
+    print(arg)
+
+func1()
+print(arg)
