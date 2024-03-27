@@ -18,8 +18,34 @@
 # del num[:1]
 # print(num)
 
-a = 'Python'
-b = 'programing'
-print(f'{a} is a {b} language')
-print('{0} is a {1} language'.format(a, b))
-print('%s is a %s language' % (a, b))
+# a = 'Python'
+# b = 'programing'
+# print(f'{a} is a {b} language')
+# print('{0} is a {1} language'.format(a, b))
+# print('%s is a %s language' % (a, b))
+
+# str = 'pen'
+# print(str + 'pine' 'apple')
+
+# print("na" + "na")
+
+# x = 10
+
+# if x == 10:
+#     print('a')
+#     if x <= 10:
+#         print('b')
+#         if x > 10:
+#             print('c')
+#             if x >= 10:
+#                 print('d')
+
+# print('e')
+
+for i in range(3):
+    if i == 0:
+        continue
+    print(i)
+    for v in ['a', 'b', 'c']:
+        print(v)
+        break
