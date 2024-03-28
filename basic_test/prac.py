@@ -64,31 +64,36 @@
 # sorted(list)
 # print(list)
 
-arg = 'out'
+# arg = 'out'
 
-def func1():
+# def func1():
 
-    def func2():
-        arg = 'local'
+#     def func2():
+#         arg = 'local'
 
-    def func3():
-        nonlocal arg
-        arg = 'nonlocal'
+#     def func3():
+#         nonlocal arg
+#         arg = 'nonlocal'
 
-    def func4():
-        global arg
-        arg = 'global'
+#     def func4():
+#         global arg
+#         arg = 'global'
 
-    arg = 'in'
+#     arg = 'in'
 
-    func2()
-    print(arg)
+#     func2()
+#     print(arg)
 
-    func3()
-    print(arg)
+#     func3()
+#     print(arg)
 
-    func4()
-    print(arg)
+#     func4()
+#     print(arg)
 
-func1()
-print(arg)
+# func1()
+# print(arg)
+
+data = [1,2]
+data.append(3)
+data.pop()
+print(data)
